@@ -159,7 +159,7 @@ const service = [
 const Home = () => {
   return (
     <div>
-      <div className="bg-banner w-full h-[45rem] bg-no-repeat">
+      <div className="bg-banner bg-cover w-full h-[45rem] bg-no-repeat">
         <Header />
         <div className="lg:flex mb-20 items-center gap-4 justify-between m-4 lg:ml-16 lg:mr-16">
           <div className="text-white lg:px-10">
