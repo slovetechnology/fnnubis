@@ -2,30 +2,6 @@ import React from 'react'
 import group from '../images/group.png'
 import idea from '../images/idea.png'
 import contact from '../images/contact.jpg'
-import ser1 from '../images/integrated-marketing.svg'
-import ser2 from '../images/design-development.svg'
-import ser3 from '../images/digital-strategy.svg'
-import ser4 from '../images/digital-marketing.svg'
-import ser5 from '../images/growth-strategy.svg'
-import ser6 from '../images/saving-strategy.svg'
-import client from '../images/satisfied-client.svg'
-import finished from '../images/finished-project.svg'
-import team from '../images/team-members.svg'
-import blog from '../images/our-blog-posts.svg'
-import img1 from '../images/img1.jpeg'
-import img2 from '../images/img2.jpeg'
-import img3 from '../images/img3.jpeg'
-import img4 from '../images/img4.jpeg'
-import img5 from '../images/img5.jpeg'
-import img6 from '../images/img6.jpeg'
-import img7 from '../images/img7.jpeg'
-import img8 from '../images/img8.jpeg'
-import img9 from '../images/img9.jpeg'
-import img10 from '../images/img10.jpeg'
-import img11 from '../images/img11.jpeg'
-import img12 from '../images/img12.jpeg'
-import img13 from '../images/img13.jpeg'
-import img14 from '../images/img14.jpeg'
 import img16 from '../images/img16.jpeg'
 import img17 from '../images/img17.jpeg'
 import img18 from '../images/img18.jpeg'
@@ -40,126 +16,13 @@ import Footer from './Footer'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { WhatsappNumber } from '../utils'
+import { About, Products, Service, WhatsappNumber } from '../utils'
 
 
-const Products = [
-  {
-    image: img1,
-    title: 'kick starter for mercedes BENZ Actros new model(mp2*)',
-  },
-  {
-    image: img2,
-    title: 'Mercedes BENZ 911, 814 etc models 12volts and 24volt available',
-  },
-  {
-    image: img4,
-    title: 'kick clutch for mercedes universal MAN',
-  },
-  {
-    image: img5,
-    title: 'Shooting coil Big for universal man diesel',
-  },
-  {
-    image: img6,
-    title: 'Kick Bendix for mercedes man diesel',
-  },
-  {
-    image: img7,
-    title: 'Amateur for universal',
-  },
-  {
-    image: img8,
-    title: 'Shooting coil small for universal man diesel',
-  },
-  {
-    image: img9,
-    title: 'Brush',
-  },
-  {
-    image: img10,
-    title: 'Fide Coil for Mercedes trucks',
-  },
-  {
-    image: img11,
-    title: 'Alternator For Mercedes 911 etc',
-  },
-  {
-    image: img12,
-    title: 'Solenoid for Mercedes 911, 814 trucks',
-  },
-  {
-    image: img13,
-    title: 'Kick starter Bendix for Mercedes trucks',
-  },
-  {
-    image: img14,
-    title: 'Amateur for Mercedes small trucks',
-  },
-  {
-    image: img3,
-    title: 'Brush and brush holder for Mercedes small trucks',
-  },
-]
-const about = [
-  {
-    image: client,
-    title: '97%',
-    text: 'Satisfied clients',
-  },
-  {
-    image: finished,
-    title: '3214',
-    text: 'Finished Project',
-  },
-  {
-    image: team,
-    title: '125',
-    text: 'Team Members',
-  },
-  {
-    image: blog,
-    title: '2135',
-    text: 'Our Blog Posts',
-  }
-]
-
-const service = [
-  {
-    image: ser1,
-    title: 'Integrated Marketing',
-    text: 'Lorem ipsum dolor sit amet, pretium pretium tempor.Lorem ipsum',
-  },
-  {
-    image: ser2,
-    title: 'Design & Development',
-    text: 'Lorem ipsum dolor sit amet, pretium pretium tempor.Lorem ipsum',
-  },
-  {
-    image: ser3,
-    title: 'Digital Strategy',
-    text: 'Lorem ipsum dolor sit amet, pretium pretium tempor.Lorem ipsum',
-  },
-  {
-    image: ser4,
-    title: 'Digital Marketing',
-    text: 'Lorem ipsum dolor sit amet, pretium pretium tempor.Lorem ipsum',
-  },
-  {
-    image: ser5,
-    title: 'Growth Strategy',
-    text: 'Lorem ipsum dolor sit amet, pretium pretium tempor.Lorem ipsum',
-  },
-  {
-    image: ser6,
-    title: 'Saving Strategy',
-    text: 'Lorem ipsum dolor sit amet, pretium pretium tempor.Lorem ipsum',
-  },
-]
 const Home = () => {
   return (
     <div>
-      <div className="bg-banner bg-cover w-full h-[45rem] bg-no-repeat">
+      <div className="bg-banner bg-cover w-full h-[49rem] bg-no-repeat">
         <Header />
         <div className="lg:flex mb-20 items-center gap-4 justify-between m-4 lg:ml-16 lg:mr-16">
           <div className="text-white lg:px-10">
@@ -177,10 +40,10 @@ const Home = () => {
           </div>
           <div className="mt-10">
             <div className=" items-center justify-center mx-2 my-6 gap-10 grid md:grid-cols-3">
-              {service.map((item, i) => (
+              {Service.map((item, i) => (
                 <div className="" key={i}>
                   <img src={item.image} alt="" className="mb-3" />
-                  <div className="text-xl mb-2 font-semibold"> {item.title} </div>
+                  <div className="text-xl mb-2 uppercase font-semibold"> {item.title} </div>
                   <p className=""> {item.text} </p>
                 </div>
               ))}
@@ -206,7 +69,7 @@ const Home = () => {
         </div>
         <div className="mt-20">
           <div className="lg:flex items-center justify-between">
-            {about.map((item, i) => (
+            {About.map((item, i) => (
               <div key={i} className="flex items-center mx-16 lg:mx-0 mb-10 gap-10">
                 <img src={item.image} alt="" className="" />
                 <div className="">
@@ -220,6 +83,7 @@ const Home = () => {
       </div>
 
       <div className="">
+        <div className="text-center text-4xl font-bold uppercase mb-10">meet the team</div>
         <div className="flex items-center justify-center w-11/12 mx-auto pb-14">
           <Swiper
             slidesPerView={1}
@@ -283,7 +147,7 @@ const Home = () => {
       <div className="bg-purple-700 py-20">
         <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="text-white">
-            <h4 className="font-bold">Meet the Team</h4>
+            <h4 className="font-bold">Meet the C.E.O</h4>
             <h1 className="text-4xl font-bold">NDUBUISI .F. NWABUISI</h1>
             <p className="">NDUBUISI .F. NWABUISI is the Managing Director of F.N NUBIS enterprises a spare part company specialising in all kind of motor spare parts and motor accessories, Truck and Trailer parts for Mercedes Benz, Scania, MAN and BPW.</p>
             <p className="">My responsibilities here include procurement of parts, customer relations, business development and general management of the F.N NUBIS team.</p>
