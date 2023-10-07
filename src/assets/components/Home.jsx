@@ -177,17 +177,19 @@ const Home = () => {
         </div>
       </div>
       <div className="bg-slate-100 py-14">
+        <div className="w-11/12 mx-auto">
 
-        <div className="flex items-center justify-center">
-          <a href={`https://wa.me/${WhatsappNumber}`} target='_blank'>
-            <img src={what} alt="" className="w-[17rem]" />
-          </a>
+          <div className="flex items-center justify-center">
+            <a href={`https://wa.me/${WhatsappNumber}`} target='_blank'>
+              <img src={what} alt="" className="w-[17rem]" />
+            </a>
+          </div>
+          <div className="text-center text-3xl md:text-4xl font-semibold text-green-600"> <a href={`https://wa.me/${WhatsappNumber}`} target='_blank'>Contact us directly via Whatsapp</a> </div>
         </div>
-        <div className="text-center text-3xl md:text-4xl font-semibold text-green-600"> <a href={`https://wa.me/${WhatsappNumber}`} target='_blank'>Contact us directly via Whatsapp</a> </div>
-    </div>
+      </div>
 
-      {/* footer */ }
-  <Footer />
+      {/* footer */}
+      <Footer />
     </div >
   )
 }
