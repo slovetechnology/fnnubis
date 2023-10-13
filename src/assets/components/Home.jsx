@@ -9,8 +9,8 @@ import img19 from '../images/img19.jpeg'
 import img20 from '../images/img20.jpeg'
 import man from '../images/man.jpeg'
 import what from '../images/whats.png'
-import { VscPass } from 'react-icons/vsc'
-import { FaMailBulk } from 'react-icons/fa'
+import { SlEnvolope, SlPhone } from 'react-icons/sl'
+import { FaMailBulk, FaMapMarkerAlt } from 'react-icons/fa'
 import Header from './Header'
 import Footer from './Footer'
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -32,11 +32,10 @@ const Home = () => {
           <img src={group} alt="" className="w-[32rem]" />
         </div>
       </div>
-      <div className="lg:ml-16 mb-32 mx-6 lg:mt-20 lg:mr-16">
+      <div id="services" className="lg:ml-16 mb-32 mx-6 lg:mt-20 lg:mr-16">
         <div className="">
           <div className="">
-            <h6 className="lg:text-xl text-lg font-medium">We’re offering</h6>
-            <p className="font-bold text-2xl lg:text-4xl">Creative Digital Agency</p>
+            <h6 className="lg:text-5xl text-3xl font-medium">We’re offering</h6>
           </div>
           <div className="mt-10">
             <div className=" items-center justify-center mx-2 my-6 gap-10 grid md:grid-cols-3">
@@ -57,12 +56,13 @@ const Home = () => {
           <div className="mb-12 lg:mb-0">
             <h6 className="text-xl mb-2 font-medium">Our work process</h6>
             <p className="font-bold mb-2 text-4xl">Discover New Idea With Us!</p>
-            <h6 className="text-xl font-medium">Imagination will take us everywhere</h6>
-            <h6 className="text-md text-gray-500 font-semibold">Lorem ipsum dolor sit amet, pretium pretium tempor.Lorem ipsum dolor sit amet, consectetur</h6>
-            <div className="mt-4">
-              <div className="flex items-center gap-3">  <VscPass />Lorem ipsum dolor sit amet, pretium pretium </div>
-              <div className="flex items-center gap-3">  <VscPass />Lorem ipsum dolor sit amet, pretium pretium </div>
-              <div className="flex items-center gap-3">  <VscPass />Lorem ipsum dolor sit amet, pretium pretium </div>
+            <div className="flex items-center gap-1 text-xl pt-5">
+              <FaMapMarkerAlt className='text-orange-500 text-4xl' />
+              <div className="">Shop 97, block 8, Zone D, Tradefair canple Lagos Nigeria</div>
+            </div>
+            <div className="flex items-center gap-1 text-xl pt-5">
+              <SlPhone className='text-orange-500 text-4xl' />
+              <div className="">+2438160733553</div>
             </div>
           </div>
           <img src={idea} alt="" className="" />
@@ -82,7 +82,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="">
+      <div id="team" className="">
         <div className="text-center text-4xl font-bold uppercase mb-10">meet the team</div>
         <div className="flex items-center justify-center w-11/12 mx-auto pb-14">
           <Swiper
@@ -122,7 +122,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-gray-200 py-20">
+      <div id="products" className="bg-gray-200 py-20">
         <div className="w-11/12 mx-auto">
           <div className="">
             <h1 className="text-4xl mb-2 font-semibold">Let's See Our Latest Products</h1>
@@ -144,7 +144,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="bg-purple-700 py-20">
+      <div id="about" className="bg-purple-700 py-20">
         <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="text-white">
             <h4 className="font-bold">Meet the C.E.O</h4>
@@ -176,7 +176,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="bg-slate-100 py-14">
+      <div id="contact" className="bg-slate-100 py-14">
         <div className="w-11/12 mx-auto">
 
           <div className="flex items-center justify-center">

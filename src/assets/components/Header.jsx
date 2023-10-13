@@ -21,8 +21,8 @@ const urlLinks = [
         url: '#products'
     },
     {
-        title: 'testimonials',
-        url: '#testimonials'
+        title: 'contact us',
+        url: '#contact'
     },
     {
         title: 'team',
@@ -61,14 +61,14 @@ const Header = () => {
                         {urlLinks.map((item, i) => (
                             <a key={i} href={item.url} className={`text-white font-semibold text-sm py-2 capitalize ${active === item.title ? 'bg-blue-900 rounded-full px-6' : 'px-2'}`}>{item.title}</a>
                         ))}
-                        <div className="rounded-full bg-green-400 py-2 px-3 text-center">{WhatsappNumber}</div>
+                        <a href={`tel:${WhatsappNumber}`} target="_blank" className="rounded-full bg-green-400 py-2 px-3 text-center">{WhatsappNumber}</a>
                     </div>
 
                    {show && <div className="items-start py-3 flex flex-col gap-4">
                         {urlLinks.map((item, i) => (
                             <a key={i} href={item.url} className={`text-white font-semibold w-full hover:bg-blue-900 rounded-full text-sm py-2 px-6 capitalize ${active === item.title ? 'bg-blue-900 rounded-full' : ''}`}>{item.title}</a>
                         ))}
-                        <div className="rounded-full bg-green-400 py-2 px-3 text-center">{WhatsappNumber}</div>
+                        <a href={`tel:${WhatsappNumber}`} target="_blank" className="rounded-full bg-green-400 py-2 px-3 text-center">{WhatsappNumber}</a>
                     </div>}
                 </div>
             </div><br /><br /><br /><br />

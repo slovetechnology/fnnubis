@@ -11,8 +11,8 @@ const Footer = () => {
                     <div className="grid grid-cols-1 gap-10 md:grid-cols-7 py-10 w-10/12 mx-auto">
 
                         <div className="text-white flex flex-col gap-3 md:col-span-2">
-                            <h1 className='mb-2'>143 castle road 517</h1>
-                            <h1 className='mb-3'>district, kiyev port south Canada</h1>
+                            <h1 className='mb-2'>Business Reg. No. 3577478</h1>
+                            <h1 className='mb-2'>Shop 97, block 8, Zone D, Tradefair canple Lagos Nigeria</h1>
                             <div className="">
                                 <h1 className=''>{WhatsappNumber}</h1>
                                 <h1 className=''>Marshmallow@yourmail.com</h1>
